@@ -1,0 +1,21 @@
+<html>
+<head>
+<p> ATIVIDADE DE IDADES <p>
+<script>
+var idade = prompt ('Qual é a sua idade? ');
+idadeDias = idade*365
+idade30Anos = Math.round((idade+30)*365);
+document.write(' A quantidade de dias em sua vida daqui 30 anos é de: '+ idade30Anos);
+
+idade40Meses = Math.round((idadeDias +(40*30))/365);
+document.write(' Sua idade em 40 meses será de: '+ idade40Meses);
+
+if(idade40Meses>= 18 ){
+document.write(' PODE VOTAR')
+}else{
+document.write(' ainda nao vota')}
+ </script> 
+</head>
+</html>
+
+

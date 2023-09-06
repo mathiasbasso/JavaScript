@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+<script>type="Aposentadoria"
+ 
+var nome = prompt('Digite seu nome.');
+var sexo= prompt('Digite qual seu sexo. (1)Homem - (2)Mulher');
+var idade= prompt('Digite qual seu idade.');
+var carteira = prompt("Digite quanto tempo de trabalho voce tem");
+
+var aposentadoria = parseInt(idade) + parseInt(carteira);
+
+
+alert("seu valor de aposentadoria é:" + aposentadoria);
+
+if(sexo == 1){
+	if( aposentadoria < 95){
+	alert("não pode se aposentar")
+	} else if (aposentadoria >= 95){
+	alert ("pode se aposentar")}
+}else if(sexo == 2){
+	if( aposentadoria < 85){
+	alert("não pode se aposentar")
+	} else if (aposentadoria >= 85){
+	alert ("pode se aposentar")}
+}else{
+	alert("Digite um sexo válido");
+}
+
+</script>
+
+</<body>
+
+
+
+    
+
+ <footer>
+
+    </footer>
+
+</html>

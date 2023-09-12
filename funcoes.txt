@@ -1,0 +1,7 @@
+function meuCallBack(nome){
+	console.log('olá meu nome é '+ nome);
+}
+function saudacao(nome, callback){
+	callback(nome);
+}
+saudacao('teste', meuCallBack);

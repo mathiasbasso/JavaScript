@@ -1,13 +1,69 @@
 
 var nomeArray = ['Mathias','Sirino' ,'Basso'];
 console.log(nomeArray[0]);
+
 nomeArray.unshift('Bonizoni');//adiciona um elemento em primeiro
 console.log(nomeArray[0]);
+
 nomeArray.push('Itália'); //adiciona em ultimo
 console.log(nomeArray[4]);
+
 nomeArray.pop();//apaga o ultimo
 console.log(nomeArray);
+
 nomeArray.shift();//apaga o primeiro
 console.log(nomeArray);
+
+console.log(nomeArray[2]);//procura o elemento na posição
+console.log(nomeArray.indexOf('Mathias'));//procura a posição do elemento
+---------------------------------------------------------------------------------------
+var nomeArray = ['Mathias','Sirino' ,'Basso'];
+var array2 = ['Odejan', 'Luis', 'Basso']; 
+var array3 = (nomeArray.concat(array2);//concatena dois arrays(junta tudo)
+console.log(array3);
+----------------------------------------------------------------------------------------
+
+DESAFIO IMPAR/PAR
+
+var array1 = [1,2,4,10,15];
+for (let i =0; i< array1.length; i++){
+	if(array1 [1] %2 == 0 ){
+		array1[i] = array1[i] + 1;
+}else if (array1[1] %2 != 0){
+		array1.splice(i, 1);
+		i--;
+}
+}
+console.log(array1);
+---------------------------------------------------------------------------------------
+JSON
+
+var teste1 = {
+	nome :'Pedro',
+	idade : '25',
+	email : 'pedrinhoDaBarra@teste.com'
+}
+console.log(teste1);
+---------------------------------------------------------------------------------------
+DOM:
+modelo de documentos por objetos - interação e representação com objetos em documentos
+HTML, XHTML, XML
+
+HTML = WEB
+XML = Informações, rígido
+
+DOM - Arvore: 
+	html, head, body, footer
+---------------------------------------------------------------------------------------
+CONTEXTO JS
+	é aonde começa e onde termina a função (this)
+---------------------------------------------------------------------------------------
+FUNÇÕES
+instruções, parâmetros
+---------------------------------------------------------------------------------------
+
+
+
+
 
 

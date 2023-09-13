@@ -5,3 +5,15 @@ function saudacao(nome, callback){
 	callback(nome);
 }
 saudacao('teste', meuCallBack);
+
+---------------------------------------------------------------------------
+ sincrono - depende de uma só ação(ja definida)
+ assincrona - quando depende de mais eventos e nao foi ainda definida
+---------------------------------------------------------------------------
+storage - armazenar - banco de dados
+   //	- otimização
+sessionStorare - o  usuário realiza uma só transação 
+localStorage - o usuário vai entrar depois (discord)
+-----------------------------------------------------------------------------
+CRUD
+Create- Read - Update - Delete

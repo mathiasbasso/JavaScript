@@ -21,7 +21,8 @@ function addToScreen(value){
         if(operadoresPadrao.includes(screen.value[valorAnterior])){
             screen.value = screen.value.substring(0, (screen.value.length - 2));
             screen.value = screen.value + value;
-        }   
+        }
+        
     }
     
     //CASO A OPERAÇÃO INICIE COM OPERADORES, ESTE SWITCH DEIXA O CAMPO VAZIO.
@@ -40,5 +41,12 @@ function addToScreen(value){
     }
 }
 function result(){
-    screen.value = eval(screen.value);
+    const operadoresPadrao = ['*', '+', '-', '/', '.'];
+    var ultimoValor = screen.value.slice(-1);
+
+    if(operadoresPadrao.includes(ultimoValor)){
+        screen.value = '0';
+    }else{
+        screen.value = eval(screen.value);
+    }
 }

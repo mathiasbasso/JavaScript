@@ -23,6 +23,8 @@ function addToScreen(value){
             screen.value = screen.value + value;
         }   
     }
+    
+    //CASO A OPERAÇÃO INICIE COM OPERADORES, ESTE SWITCH DEIXA O CAMPO VAZIO.
     switch(screen.value[0]){
         case '*':
             screen.value = '';
@@ -31,6 +33,8 @@ function addToScreen(value){
         case '.':
             screen.value = '';
         case '-':
+            screen.value = '';
+        case '+':
             screen.value = '';
 
     }

@@ -1,0 +1,35 @@
+<html>
+<head>
+<p> ATIVIDADE DE IDADES <p>
+<script>
+var nota1, nota2, nota3, nota4, nota5;
+
+nota1 = prompt("Primeira nota: ")
+nota2 = prompt("Segunda nota: ")
+nota3 = prompt("Terceira nota: ")
+nota4 = prompt("Quarta nota: ")
+nota5 = prompt("Quinta nota: ")
+
+nota1  =nota1*2;
+nota2  =nota2*2;
+nota3  =nota3*2;
+nota4  =nota4*2;
+nota5  =nota5*2;
+
+notaTotal = nota1+nota2+nota3+nota4+nota5;
+            if (notaTotal == 0){
+                alert("Conceito E --- Reprovado");
+            }else if(notaTotal>=1 && notaTotal<36 ){
+                alert("Conceito D--- APROVADO");
+            } else if (notaTotal>=36 && notaTotal<61) {
+                alert("Conceito C ----- APROVADO");
+            } else if (notaTotal>=61 && notaTotal<86) {
+                alert("Conceito B ------- APROVADO");
+            } else if (notaTotal>=86&& notaTotal<101) {
+                alert("Conceito A ------- APROVADO");
+            } else if (notaTotal>100 || notaTotal<0) {
+               alert("INVÁLIDO");
+            }
+ </script> 
+</head>
+</html>

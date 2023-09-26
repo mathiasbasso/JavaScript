@@ -16,10 +16,9 @@ escolha = prompt("digite sua escolha");
     if (escolha ==1){
        alert("o valor do ingreso é:" + entradaVIP);
              if(python  == 1){
-                alert("vc tem desconto de 50%");
-                     entradaVIP = entradaVIP/2;
-                    alert("o valor do ingreso é:" , entradaVIP );
-              }else{
+                entradaVIP = entradaVIP/2;
+                alert("vc tem desconto de 50% e valor do ingreso é:" + entradaVIP );
+                     }else{
                      alert("voce nao tem desconto");}
     }else (escolha ==2);{
        entradaPadrao = entradaPadrao/2;

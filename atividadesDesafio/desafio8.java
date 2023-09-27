@@ -8,7 +8,6 @@ public class desafio8 {
             Scanner entrada = new Scanner(System.in);
             String python, escolha, nome;
             int idade;
-            double valor, valorFinal;
             double ingresso = 0;
 
             System.out.println("Digite seu nome: ");
